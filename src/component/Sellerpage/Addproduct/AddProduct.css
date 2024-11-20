@@ -1,0 +1,122 @@
+/* App.css */
+
+/* Main Container */
+.add-product-form {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(145deg, #ffffff, #f9f9f9);
+  border: 1px solid #e0e0e0;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Page Header */
+.add-product-form h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #333333;
+  margin-bottom: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+/* Form Layout */
+.add-product-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Labels */
+.add-product-form label {
+  font-weight: bold;
+  color: #555555;
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+}
+
+/* Inputs & Textareas */
+.add-product-form input,
+.add-product-form textarea {
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  transition: all 0.3s ease;
+  background: #ffffff;
+  box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+/* Input Focus Effects */
+.add-product-form input:focus,
+.add-product-form textarea:focus {
+  border-color: #4CAF50;
+  box-shadow: 0px 0px 8px rgba(76, 175, 80, 0.3);
+}
+
+/* Buttons */
+.add-product-form button {
+  padding: 12px 20px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #ffffff;
+  background: linear-gradient(90deg, #4CAF50, #2E7D32);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+}
+
+.add-product-form button:hover {
+  background: linear-gradient(90deg, #2E7D32, #4CAF50);
+  box-shadow: 0px 4px 10px rgba(76, 175, 80, 0.5);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .add-product-form {
+    padding: 20px;
+  }
+
+  .add-product-form h2 {
+    font-size: 1.5rem;
+  }
+
+  .add-product-form button {
+    font-size: 1rem;
+  }
+}
+
+/* Extra Styling for Placeholder Text */
+.add-product-form input::placeholder,
+.add-product-form textarea::placeholder {
+  color: #aaa;
+  font-style: italic;
+}
+
+/* Custom Submit Button Animation */
+.add-product-form button:active {
+  transform: scale(0.98);
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* General Text Styling */
+.add-product-form input,
+.add-product-form textarea {
+  font-family: 'Roboto', sans-serif;
+  color: #333333;
+}
+
+/* Form Header Divider */
+.add-product-form h2::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #4CAF50;
+  margin: 10px auto;
+}
