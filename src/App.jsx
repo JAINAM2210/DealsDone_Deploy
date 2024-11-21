@@ -14,8 +14,8 @@ import PaymentFail from './component/payment/paymentFailure';
 import CartProvider  from './context/CartProvider';
 
 
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 function App() {
 
   const token = localStorage.getItem('token');
